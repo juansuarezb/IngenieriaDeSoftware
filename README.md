@@ -2,6 +2,7 @@
 # Índice
 
 - [Ir a Descripción de la Carrera de Ingeniería de Software](#descripción-de-la-carrera-de-ingeniería-de-software)
+- [Ir a Información de la Carrera](#información-de-la-carrera)
 - [Ir a Objetivos](#objetivos)
 - [Ir a Perfil de Egreso](#perfil-de-egreso)
 - [Ir a Perfil Profesional](#perfil-profesional)
