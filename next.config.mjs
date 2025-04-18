@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  basePath: '/IngenieriaDeSoftware',
+  assetPrefix: '/IngenieriaDeSoftware/',
 }
 
 export default nextConfig
