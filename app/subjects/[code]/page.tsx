@@ -5,6 +5,12 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { subjectsData } from "@/data/subjects"
 
+export async function generateStaticParams() {
+  return subjectsData.map((subject) => ({
+    code: subject.code,
+  }))
+}
+
 export default function SubjectPage({ params }: { params: { code: string } }) {
   const subject = subjectsData.find((s) => s.code === params.code)
 
