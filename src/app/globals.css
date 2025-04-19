@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+/* Estilos para el botón de tema */
+.theme-toggle {
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle__within {
+  transition: transform 0.3s ease;
+}
+
+.dark .theme-toggle__within {
+  transform: rotate(180deg);
+}
+
+.theme-toggle__within__circle {
+  transition: transform 0.3s ease;
+}
+
+.dark .theme-toggle__within__circle {
+  transform: scale(0.8);
+}
+
+.theme-toggle__within__inner {
+  transition: transform 0.3s ease;
+}
+
+.dark .theme-toggle__within__inner {
+  transform: scale(0.6);
+} 
